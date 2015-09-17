@@ -30,14 +30,14 @@ angular.module('sgb-screen-selection', ['megazord'])
 	    	option.checked = !option.checked;
     	}
 
-/*    	$scope.buttonClick = function(list){
+    	$scope.buttonClick = function(list){
     		$scope.getChecked();
     		_router.fireEvent({
-				name: ’buttonClick’,
+				name: 'buttonClick',
 				params: {
 				selected: list
 				}
-			})
-    	}*/
+			}); 
+    	}
 
     }]);
