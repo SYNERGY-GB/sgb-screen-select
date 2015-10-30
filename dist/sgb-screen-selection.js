@@ -2,11 +2,11 @@
 'use strict';
 
 angular.module('sgb-screen-selection', ['megazord'])
-    .controller('sgb-screen-selection-controller', ['$scope', '_router', '_screen', '_screenParams', '$stateParams', function ($scope, _router, _screen, _screenParams, $stateParams) {
+    .controller('sgb-screen-selection-controller', ['$scope', '_router', '_screen', '_screenParams', '_data', function ($scope, _router, _screen, _screenParams, _data) {
         _screen.initialize($scope, _screenParams);
 
         //Add your controller logic here.
-        $scope.data=$stateParams.data; 
+        $scope.data= _data; 
         $scope.selected=[];
         $scope.getChecked = function (){
         $scope.selected=[];
